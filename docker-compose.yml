@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  notification-service:
+    build: .
+    container_name: notification-service
+    ports:
+      - "7083:7083"
+    restart: unless-stopped
